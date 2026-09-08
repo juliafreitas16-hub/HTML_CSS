@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Cotação de Seguro de Veículo</h1>
+<form>
+<fieldset>
+
+<legend> Condutor</legend>
+<p> </p>
+
+<label for="proprietario">Nome do proprietário:</label>
+
+    <input type="text" id="proprietario" name="nome do proprietario" required>
+
+<p> </p>
+
+
+<label for="cnh">CNH:</label>
+
+    <input type="text" id="CNH" name="cnh" required>
+
+    <p> </p>
+
+
+
+<label for="data">Data de Emissão da CNH:</label>
+<input type="date" id="data" name="data">
+   <p> </p>
+
+<label for="Estado Civil"> Estado Civil:</label>
+<p> </p>
+<label><input type="radio" name="estadocivil"> Solteiro</label>
+<label><input type="radio" name="estadocivil"> Casado</label>
+<label><input type="radio" name="destadocivil"> Divorciado</label>
+ <label><input type="radio" name="estadocivil"> Viúvo</label> 
+<p> </p>
+</fieldset> 
+
+<fieldset> 
+<legend> Veículo</legend>
+<p> </p>
+
+<label for="carro"> Placa do Carro:</label>
+ <input type="text" id="carro" name="carro" size="7" placeholder="ABC-1234" required>
+<p> </p>
+
+ <label for="marca">Marca do Veículo</label>
+                <select id="marca" name="marca" required>
+                    <option value="Vw"> VW </option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+<p> </p>
+<label for="modelo">Ano do modelo: </label>
+    <input type="number" id="modelo" name="modelo" required>
+<p> </p>
+</fieldset> 
+
+<fieldset> 
+<legend> Uso</legend>
+<p> </p>
+ 
+<label for="usa">Usa o carro para trabalho (Uber/Taxí)?</label>
+<p> </p>
+<label><input type="radio" name="trabalho"> Sim </label>
+<label><input type="radio" name="trabalho"> Não </label>
+<p> </p>
+
+<input type="checkbox" id= "rastreador" name=rastreador >
+ <label for="rastreador">Possui rastreador instalado </label><br>
+<p> </p>
+
+ </fieldset> 
+ <p> </p>
+ <button type="submit">Solicitar Cotação</button>
+</form>
+</body>
+</html>
